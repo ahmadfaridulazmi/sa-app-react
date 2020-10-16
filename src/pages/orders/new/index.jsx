@@ -101,6 +101,8 @@ const NewOrder = () => {
           </Button>
         </Form.Item>
       </Form>
+
+      <Button type="primary" onClick={() => history.push('/')} >Back</Button>
     </Spin>
     </>
   );

@@ -64,6 +64,7 @@ const OrderList = () => {
       key: 'action',
       render: (text, record) => (
         <Space size="middle">
+          <a onClick={() => history.push(`/orders/${record.id}`)} >View</a>
           <a onClick={deleteOrder} data-id={record.id} >Delete</a>
           {record.status === 'cancelled' && <a onClick={retryPaymentOrder} data-id={record.id} >Retry Payment</a> }
         </Space>
